@@ -13,7 +13,5 @@ dependencies {
     testImplementation 'junit:junit:4.13.2'
 }
 
-// ✅ FIX: modern way to define main class
-application {
-    mainClass = 'App'
-}
+// ✅ FIX for old Gradle
+mainClassName = 'App'
