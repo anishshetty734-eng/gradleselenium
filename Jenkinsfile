@@ -10,7 +10,7 @@ pipeline {
 
         stage('Checkout') {
             steps {
-                git branch: 'master', url: 'https://github.com/anishshetty734-eng/gradlesele'
+                git branch: 'master', url: 'https://github.com/anishshetty734-eng/gradleselenium'
             }
         }
 
