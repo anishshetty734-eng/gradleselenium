@@ -16,24 +16,24 @@ pipeline {
 
         stage('Build') {
             steps {
-                dir('mygradleapp') {
-                    sh 'gradle build'   // ✅ FIX
+                dir('gradlesele') {   // ✅ FIX
+                    sh 'gradle build'
                 }
             }
         }
 
         stage('Test') {
             steps {
-                dir('mygradleapp') {
-                    sh 'gradle test'    // ✅ FIX
+                dir('gradlesele') {   // ✅ FIX
+                    sh 'gradle test'
                 }
             }
         }
 
         stage('Run Application') {
             steps {
-                dir('mygradleapp') {
-                    sh 'gradle run'     // ✅ FIX
+                dir('gradlesele') {   // ✅ FIX
+                    sh 'gradle run'
                 }
             }
         }
